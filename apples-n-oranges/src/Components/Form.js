@@ -13,14 +13,13 @@ export default function Form ( props ) {
         const { name, value, type, checked } = evt.target;
 
         const valueToUse = type === "checkbox" ? checked : value;
-        change ( name, valueToUse )
+        change ( name, valueToUse );
     }
 
     return (
         <form className = "form-container" onSubmit = { onSubmit } >
             <div className = "form-group-submit" >
                 <h2>Add a User</h2>
-                <button disabled = { disabled } >Submit</button>
 
                 <div className = "errors" >
                     <div>{ errors.username }</div>
@@ -31,7 +30,7 @@ export default function Form ( props ) {
 
             <div className = "form-group-inputs" >
                 <h4>Information Station</h4>
-                <label> Username
+                <label> Username:&nbsp;
                     <input
                         name = "username"
                         type = "text"
@@ -39,7 +38,7 @@ export default function Form ( props ) {
                         onChange = { onChange }
                     />
                 </label>
-                <label>Email
+                <label>Email:&nbsp;
                     <input
                         name = "email"
                         type = "text"
@@ -47,7 +46,7 @@ export default function Form ( props ) {
                         onChange = { onChange }
                     />
                 </label>
-                <label>Password
+                <label>Password:&nbsp;
                     <input
                         name = "password"
                         type = "text"
@@ -57,7 +56,7 @@ export default function Form ( props ) {
                 </label>
             </div> 
             <div className = "form-checkbox">
-                <label>Terms of Service
+                <label>Terms of Service:&nbsp;
                     <input
                         name = "terms"
                         type = "checkbox"
