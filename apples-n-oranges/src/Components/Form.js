@@ -6,6 +6,7 @@ export default function Form ( props ) {
     const onSubmit = evt => {
         evt.preventDefault()
         submit()
+        
     }
 
     const onChange = evt => {

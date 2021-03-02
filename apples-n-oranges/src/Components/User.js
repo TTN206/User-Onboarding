@@ -1,7 +1,7 @@
 import React from "react";
 
 export default function User ( details ) {
-
+    
     // if ( !details ) {
     //     return <h3>Grabbing that info...</h3>
     // }

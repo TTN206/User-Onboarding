@@ -53,7 +53,9 @@ export default function App () {
       .catch(( err ) => {
         console.log( err, "Ummmm, what are you doing?" ); 
       })
-    setFormValues( initialFormValues );
+      .finally(() => {
+        setFormValues( initialFormValues );
+      })
   };
 
 //////////////// EVENT HANDLERS ////////////////
